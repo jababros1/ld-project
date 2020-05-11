@@ -1,0 +1,47 @@
+<%- include("head");-%>
+<%if (message.length > 0) {%>
+  <h2><%=message%></h2>
+<%}%>
+<h2 class="SignUp" >SignUp</h2>
+  <div class="signin_div">
+    <form class="signin" action="/signin" method="post">
+      <div>
+        <label class="label" for="email">Email</label><br>
+        <input class="input" type="email" name="email" placeholder="   email" autocomplete="off">
+      </div>
+      <div>
+        <label class="label" for="password">Password</label><br>
+        <input class="input" type="password" name="password" placeholder="   password" autocomplete="off">
+      </div>
+      <button class="btn" type="submit" name="button">signin</button>
+    </form>
+  </div>
+  <h1 style="text-align: center;color: green; margin-top:10%; ">don't have account just signup</h1>
+  <div class="signup_div">
+    <form class="signup" action="/signup" method="post">
+      <div>
+        <label class="label" for="name">Name</label><br>
+        <input class="input" type="text" name="name" placeholder="   name">
+      </div>
+      <div>
+        <label class="label" for="email">Email</label><br>
+        <input class="input" type="text" name="email" placeholder="   email">
+      </div>
+      <div>
+        <label class="label" for="password">Password</label><br>
+        <input class="input"  type="text" name="password" placeholder="   password">
+      </div>
+      <div>
+        <label class="label"  for="genere">select your genere</label><br>
+        <select class="select" name="genere">
+          <option value="fiction">fiction</option>
+          <option value="mystery">mystery</option>
+          <option value="biography">biography</option>
+          <option value="motivational">motivational</option>
+          <option value="romance">romance</option>
+        </select>
+      </div>
+      <button class="btn" type="submit" name="button">signup</button>
+    </form>
+  </div>
+<%-include("foot")-%>

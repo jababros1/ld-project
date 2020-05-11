@@ -1,0 +1,115 @@
+body{
+  margin: 0;
+
+  background-color:black;
+}
+.btn{
+  border: 1px solid black;
+  display: block;
+  border-radius: 3px;
+  text-align: center;
+  margin: auto;
+  padding:10px 20px;
+  background-color:green;
+  margin-top: 5px;
+
+}
+button:hover{
+  background: black;
+  color: green;
+  border:1px solid green;
+}
+/* .main_bar{
+  background-color: black;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+
+}
+.main_bar a{
+  float: right;
+  margin:2px;
+  font-size:1.5vw;
+
+  text-align: center;
+  background-color: green;
+  padding: 10px;
+  color: black;
+  text-decoration: none;
+    display: inline-block;
+} */
+.navbar {
+  padding: 15px;
+  overflow: hidden;
+  background-color: black;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.navbar a {
+  float: right;
+  display: block;
+  color: green;
+  text-align: center;
+  padding: 8px 25px;
+  text-decoration: none;
+  font-size: 17px;
+  border-radius: 5px;
+}
+
+.navbar a:hover {
+  background: #ddd;
+  color: black;
+}
+
+#logo{
+  text-decoration: none;
+  margin-left: 0px;
+  float:left;
+  color: green;
+  font-size: 2vw;
+}
+.footer{
+  background-color: black;
+}
+.footer li{
+  color: green;
+  font-size:3vw;
+}
+.input{
+  width: 80%;
+  padding: 15px;
+  border-radius: 5px;
+  border:1.5px solid black;
+}
+.label{
+  color: green;
+}
+.select{
+  width:85%;
+  padding: 15px;
+  border-radius: 5px;
+  border:1.5px solid black;
+}
+.signin_div {
+  border: 1px solid black;
+  border-radius: 3px;
+  width:40%;
+  padding: 28px;
+  margin: 8% auto 0;
+  text-align:center;
+  box-shadow: 2px 5px green;
+}
+.signdup{
+  color: green;
+  margin-top: 20%;
+}
+.signup_div{
+  border: 1px solid black;
+  width:40%;
+  padding: 28px;
+  margin: 8% auto 0;
+  text-align:center;
+  box-shadow: 2px 5px green;
+}
