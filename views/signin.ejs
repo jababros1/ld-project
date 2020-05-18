@@ -1,35 +1,44 @@
 <%- include("head");-%>
-<%if (message.length > 0) {%>
-  <h2><%=message%></h2>
+<h2 class="SignUp">SignUp</h2>
+<div class="signin_div">
+  <form class="signin" action="/signin" method="post">
+    <div>
+      <label class="label" for="email">Email</label><br>
+      <input class="input" type="email" name="email" placeholder="   email" autocomplete="off">
+    </div>
+    <div>
+      <label class="label" for="password">Password</label><br>
+      <input class="input" type="password" name="password" placeholder="   password" autocomplete="off">
+    </div>
+    <button class="btn" type="submit" name="button">signin</button>
+  </form>
+</div>
+<%if (message!="") {%>
+  <div class="no_account">
+    <h1 style="color:green"><%=message%></h1>
+  </div>
 <%}%>
-<h2 class="SignUp" >SignUp</h2>
-  <div class="signin_div">
-    <form class="signin" action="/signin" method="post">
+  <div class="signup_heading">
+    <h1 >don't have account just signup below</h1>
+  </div>
+<%if (message2!="") {%>
+  <div class="no_account">
+    <h1 style="color:green"><%=message2%></h1>
+  </div>
+<%}%>
+  <div class="signup_div">
+    <form class="signup" action="/signup" method="post">
+      <div>
+        <label class="label" for="name">Name</label><br>
+        <input class="input" type="name" name="name" placeholder="   name" autocomplete="off">
+      </div>
       <div>
         <label class="label" for="email">Email</label><br>
         <input class="input" type="email" name="email" placeholder="   email" autocomplete="off">
       </div>
       <div>
         <label class="label" for="password">Password</label><br>
-        <input class="input" type="password" name="password" placeholder="   password" autocomplete="off">
-      </div>
-      <button class="btn" type="submit" name="button">signin</button>
-    </form>
-  </div>
-  <h1 style="text-align: center;color: green; margin-top:10%; ">don't have account just signup</h1>
-  <div class="signup_div">
-    <form class="signup" action="/signup" method="post">
-      <div>
-        <label class="label" for="name">Name</label><br>
-        <input class="input" type="text" name="name" placeholder="   name">
-      </div>
-      <div>
-        <label class="label" for="email">Email</label><br>
-        <input class="input" type="text" name="email" placeholder="   email">
-      </div>
-      <div>
-        <label class="label" for="password">Password</label><br>
-        <input class="input"  type="text" name="password" placeholder="   password">
+        <input class="input"  type="password" name="password" placeholder="   password" autocomplete="off">
       </div>
       <div>
         <label class="label"  for="genere">select your genere</label><br>

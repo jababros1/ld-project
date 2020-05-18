@@ -38,6 +38,12 @@ button:hover{
   text-decoration: none;
     display: inline-block;
 } */
+.footer a{
+  margin-left: 10px;
+  text-decoration: none;
+  font-size: 30px;
+  color:green;
+}
 .navbar {
   padding: 15px;
   overflow: hidden;
@@ -48,35 +54,53 @@ button:hover{
 }
 
 .navbar a {
+  background-color: green;
   float: right;
   display: block;
-  color: green;
+  color: black;
+  margin:0px 2px;
   text-align: center;
   padding: 8px 25px;
   text-decoration: none;
   font-size: 17px;
-  border-radius: 5px;
+  border-radius: 3px;
 }
 
 .navbar a:hover {
-  background: #ddd;
-  color: black;
+  background: black;
+  color: green;
+  border: 1px solid green;
+}
+.no_account{
+  font-size: 10px;
+  width: 60%;
+  text-align: center;
+  border-radius: 5px;
+  border: 1px solid green;
+  margin:auto;
+  color: green;
+  background-color: black;
+  margin-bottom: 20px;
+
 }
 
 #logo{
   text-decoration: none;
   margin-left: 0px;
   float:left;
-  color: green;
+  color: black;
   font-size: 2vw;
+  background-color: green;
 }
 .footer{
   background-color: black;
+    border: 1px solid black;
+    box-shadow: 2px 5px green;
+    width: 98%;
+    margin:  auto;
+    margin-bottom:10px;
 }
-.footer li{
-  color: green;
-  font-size:3vw;
-}
+
 .input{
   width: 80%;
   padding: 15px;
@@ -100,16 +124,23 @@ button:hover{
   margin: 8% auto 0;
   text-align:center;
   box-shadow: 2px 5px green;
+
 }
-.signdup{
+.signup_heading{
+  font-size: 10px;
+  width: 60%;
+  text-align: center;
+  border-radius: 5px;
+  border: 1px solid green;
+  margin: 110px auto;
   color: green;
-  margin-top: 20%;
+  background-color: black;
 }
 .signup_div{
   border: 1px solid black;
   width:40%;
-  padding: 28px;
-  margin: 8% auto 0;
+  margin: auto;
+  margin-bottom: 10px;
   text-align:center;
   box-shadow: 2px 5px green;
 }
